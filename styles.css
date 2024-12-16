@@ -1,0 +1,193 @@
+/* Generale */
+body {
+  background: linear-gradient(to bottom, #f7f9fc, #e3eaf2);
+  background-image: url('https://source.unsplash.com/1600x900/?christmas');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #b71c1c;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista persone */
+ul#people-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+ul#people-list li {
+  background-color: #ffffffd9;
+  border: 2px solid #e57373;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+ul#people-list li:hover {
+  transform: scale(1.02);
+  background-color: #fff3e0;
+}
+
+/* Colori per stato delle persone */
+ul#people-list li.black {
+  border-color: #b0bec5;
+}
+
+ul#people-list li.yellow {
+  border-color: #ffc916;
+  background-color: #ffc9163f;
+}
+
+ul#people-list li.green {
+  border-color: #388e3c;
+  background-color: #388e3c3f;
+}
+
+ul#people-list li span {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Rendi cliccabile tutta l'area */
+ul#people-list li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Pulsanti */
+button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 2; /* Pulsanti sopra al link */
+  position: relative;
+}
+
+button:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #c62828;
+}
+
+/* Idee */
+ul#ideas-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+ul#ideas-list li {
+  background-color: #ffffffd9;
+  border: 2px solid #64b5f6;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Colori per stato delle idee */
+ul#ideas-list li.black {
+  border-color: #b0bec5;
+}
+
+ul#ideas-list li.yellow {
+  border-color: #ffc916;
+  background-color: #ffc9163f;
+}
+
+ul#ideas-list li.green {
+  border-color: #388e3c;
+  background-color: #388e3c3f;
+}
+
+ul#ideas-list li span {
+  font-size: 14px;
+  color: #4e342e;
+}
+
+ul#ideas-list li button {
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #263238;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer span {
+  font-weight: bold;
+  color: #fdd835;
+}
+/* Contenuto della persona */
+.person-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+/* Nome della persona */
+.person-name {
+  font-size: 18px;
+  color: #d32f2f;
+}
+
+/* Totali delle persone */
+.person-totals {
+  font-size: 16px;
+  color: #4e342e;
+}

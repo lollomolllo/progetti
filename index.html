@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista Regali di Natale</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Lista Regali di Natale</h1>
+      <button id="add-person-btn">+ Aggiungi Persona</button>
+      <button id="clear-storage-btn">🗑️ Svuota Tutto</button>
+    </header>
+    
+    <main>
+      <ul id="people-list"></ul>
+    </main>
+    <footer>
+      <div id="totals">
+        <p>✅ Totale Confermato: €<span id="confirmed-total">0.00</span></p>
+        <p>💵 Totale Speso: €<span id="spent-total">0.00</span></p>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

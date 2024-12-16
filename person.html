@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dettagli Persona</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+        <h1 id="person-name" ondblclick="editPersonName()">Nome Persona</h1>
+        <button id="add-idea-btn">+ Aggiungi Idea</button>
+        <button id="delete-person-btn">🗑️ Elimina Persona</button>
+        <button id="back-btn">← Torna Indietro</button>
+      </header>
+      
+    <main>
+      <ul id="ideas-list"></ul>
+    </main>
+    <footer>
+      <div id="totals">
+        <p>Totale Confermato: €<span id="confirmed-total">0.00</span></p>
+        <p>Totale Speso: €<span id="spent-total">0.00</span></p>
+      </div>
+    </footer>
+  </div>
+  <script src="person.js"></script>
+</body>
+</html>
